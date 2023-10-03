@@ -31,21 +31,17 @@ export default function Contact({ color }) {
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
         >
-          <Stack align="center" direction="row" p={4}>
-            <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
-                04
-              </Text>
-              <Text fontWeight={800}>Contact</Text>
-            </HStack>
-            <Divider orientation="horizontal" />
-          </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-            <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
+            <Heading fontSize={"3xl"}>MES CONTACT</Heading>
             <Text color={"gray.600"} fontSize={"xl"} px={4}>
               {profile.contact}
             </Text>
-            <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
+            <Text
+              color={`${color}.500`}
+              fontWeight={600}
+              fontSize={"lg"}
+              px={4}
+            >
               {profile.email}
             </Text>
             <Center>
@@ -61,4 +57,3 @@ export default function Contact({ color }) {
     </>
   );
 }
-

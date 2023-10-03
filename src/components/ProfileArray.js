@@ -42,6 +42,7 @@ const parseProfile = (mdContent) => {
           }
           break;
         case "Logo":
+          console.log(lines[++i]);
           profile.logo = lines[++i].substr(2).trim();
           break;
         default:
